@@ -1,0 +1,8 @@
+**/dist
+**/storybook-static
+*.map
+*.lock
+*.ico
+*.png
+*.md
+package-lock.json
