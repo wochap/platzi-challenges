@@ -1,0 +1,33 @@
+{
+  "name": "@monorepo-boilerplate/css-grid",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/css-grid.umd.min.js",
+  "scripts": {
+    "dev": "vue-cli-service build --target lib --name css-grid ./src/main.js --formats umd-min --mode development --watch",
+    "build": "vue-cli-service build --target lib --name css-grid ./src/main.js --formats umd-min --report --color",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "commit": "git-cz"
+  },
+  "vuePlugins": {
+    "resolveFrom": "../../"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wochap/monorepo-boilerplate.git",
+    "directory": "packages/css-grid"
+  },
+  "author": "Gean <gean.marroquin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wochap/monorepo-boilerplate/issues"
+  },
+  "homepage": "https://github.com/wochap/monorepo-boilerplate/tree/master/packages/css-grid#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Instagram</title>
+    <style>
+      @media screen and (max-width: 768px) {
+        body {
+          background-color: red;
+        }
+      }
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      .landing {
+        display: grid;
+        grid-template-columns: minmax(1024, auto);
+        justify-content: center;
+      }
+
+      .landing__wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 70px 1fr;
+        justify-content: center;
+        grid-gap: 5px;
+        grid-template-areas:
+          'image title'
+          'description description'
+          'form form'
+          'countdown countdown';
+      }
+
+      @media screen and (min-width: 900px) {
+        .landing__wrapper {
+          grid-template-columns: 70px 1fr 200px;
+          grid-template-areas:
+            'image title form'
+            '. description form'
+            '. countdown form';
+        }
+      }
+
+      .landing__image {
+        grid-area: image;
+      }
+      .landing__title {
+        grid-area: title;
+      }
+      .landing__description {
+        grid-area: description;
+      }
+      .landing__form {
+        grid-area: form;
+      }
+      .landing__countdown {
+        grid-area: countdown;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="landing">
+      <div class="landing__wrapper">
+        <div class="landing__image">image</div>
+        <div class="landing__title">title</div>
+        <div class="landing__description">description</div>
+        <div class="landing__form">form</div>
+        <div class="landing__countdown">countdown</div>
+      </div>
+    </section>
+  </body>
+</html>

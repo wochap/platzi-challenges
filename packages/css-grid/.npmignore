@@ -1,0 +1,9 @@
+dist/*
+!dist/css-grid.umd.min.js
+src/
+.babelrc.js
+.gitignore
+CHANGELOG.md
+jest.config.js
+README.md
+vue.config.js
